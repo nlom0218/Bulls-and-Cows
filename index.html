@@ -9,28 +9,39 @@
 <body>
     <header>
         <h1>
-            숫자야구
+            ⚾ 숫자야구 🏏
         </h1>
     </header>
     <button id="js-startBtn" class="start-btn">
         시작하기
     </button>
-    <div id="js-answerLoaf" class="hiding">
-        <div class="js-inputExplan">4자리의 숫자를 입력하세요</div>
+    <div id="js-answerLoaf" class="answer-loaf hiding">
+        <div id="js-inputExplan" class="input-explan">4자리의 숫자를 입력하세요</div>
         <form id="js-formAnswer">
-            <input type="text" id="js-inputAnswer" class="input-answer" maxlength="4" minlength="4">
+            <input autocomplete="off" type="text" id="js-inputAnswer" class="input-answer" maxlength="4" minlength="4">
         </form>
     </div>
-    <div id="js-result" class="result hiding"></div>
+    <div id="js-resultLoaf" class="result-loaf hiding">
+        <div class="curColumn">
+            <div class="curColumn_title">현재상황</div>
+            <div id="js-result" class="result"></div>
+        </div>
+        <div class="pastColumn">
+            <div class="pastColumn_title">지난상황</div>
+            <div id="js-pastResult" class="past-result"></div>
+        </div>
+    </div>
     <div id="js-countDown" class="countdown hiding"></div>
     <div id="js-finishGame" class="finish-game hiding">
         <div id="js-finishText" class="finish-text"></div>
-        <button id="js-resetBtn" class="resetBtn">
-            다시하기
-        </button>
-        <button id="js-backBtn" class="backBtn">
-            처음 화면으로
-        </button>
+        <div class="finish-btn">
+            <button id="js-resetBtn" class="resetBtn">
+                다시하기
+            </button>
+            <button id="js-backBtn" class="backBtn">
+                처음 화면으로
+            </button>
+        </div>
     </div>
     <script src="./index.js"></script>
 </body>
