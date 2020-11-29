@@ -18,6 +18,18 @@ header h1 {
   border-radius: 10px;
 }
 
+.ruleDiscription button {
+  font-size: 20px;
+  font-weight: 400;
+  padding: 10px 30px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  background-color: #8d5524;
+  color: #ffdbac;
+  border-radius: 10px;
+}
+
 .answer-loaf {
   margin-top: 30px;
   display: flex;
@@ -28,6 +40,7 @@ header h1 {
 .answer-loaf .input-explan {
   font-size: 28px;
   font-weight: 600;
+  color: #8d5524;
 }
 
 .answer-loaf .input-answer {
@@ -68,6 +81,12 @@ header h1 {
   margin-bottom: 10px;
 }
 
+.past-result {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .result,
 .past-result {
   font-size: 22px;
@@ -79,10 +98,11 @@ header h1 {
   font-size: 26px;
   font-weight: 600;
   color: #cc2a36;
+  margin-bottom: 100px;
 }
 
 .finish-text {
-  margin-top: 80px;
+  margin-top: 40px;
   font-size: 40px;
   font-weight: 900;
   color: #8d5524;
@@ -110,4 +130,33 @@ header h1 {
 
 .backBtn {
   margin-top: 20px;
+}
+
+.result-table {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.result-table div {
+  margin-bottom: 10px;
+  font-size: 22px;
+  font-weight: 700;
+  color: #c68642;
+}
+
+.difficultySetting {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 30px;
+  margin-bottom: 50px;
+  color: #8d5524;
+  font-size: 30px;
+  font-weight: 700;
+}
+
+.difficultySetting input {
+  margin: 20px 0px;
 }

@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./index.css">
-    <title>Bull and Cows</title>
+    <link rel="stylesheet" href="./css/index.css">
+    <title>숫자야구</title>
 </head>
 <body>
     <header>
@@ -15,6 +15,15 @@
     <button id="js-startBtn" class="start-btn">
         시작하기
     </button>
+    <div id="js-difficultySetting" class="difficultySetting">
+        <div id="js-difficulty" class="difficultySetting_difficulty">
+            난이도 조절
+        </div>
+        <input type="range" min="5" max="30" id="js-controlRange" step="5" value="10">
+        <div id="js-curDifficulty">
+            현재 제한횟수는 10회 입니다
+        </div>
+    </div>
     <div id="js-answerLoaf" class="answer-loaf hiding">
         <div id="js-inputExplan" class="input-explan">4자리의 숫자를 입력하세요</div>
         <form id="js-formAnswer">
@@ -22,12 +31,8 @@
         </form>
     </div>
     <div id="js-resultLoaf" class="result-loaf hiding">
-        <div class="curColumn">
-            <div class="curColumn_title">현재상황</div>
-            <div id="js-result" class="result"></div>
-        </div>
         <div class="pastColumn">
-            <div class="pastColumn_title">지난상황</div>
+            <div class="pastColumn_title">상황판</div>
             <div id="js-pastResult" class="past-result"></div>
         </div>
     </div>
@@ -42,7 +47,13 @@
                 처음 화면으로
             </button>
         </div>
+        <div id="js-resultTable" class="result-table"></div>
     </div>
+    <a href="./rule.html" class="ruleDiscription" id="js-ruleDiscription">
+        <button>
+            숫자야구 규칙 알아보러 가기
+        </button>
+    </a >
     <script src="./index.js"></script>
 </body>
 </html>
