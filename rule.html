@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/index.css">
     <title>숫자야구 규칙</title>
@@ -11,7 +12,16 @@
     <div class="rule">
         <div id="js-ruleDiscription" class="rule-discription">
             <div id="js-ruleTitle" class="rule-title"></div>
-            <div id="js-rulecontents" class="rule-contents"></div>
+            <div id="js-ruleContents" class="rule-contents"></div>
+            <div id="js-ruleExample" class="rule-example"></div>
+        </div>
+        <div id="js-ruleBtn" class="rule-btn">
+            <div id="js-ruleLeftBtn" class="rule-leftBtn" data-btn="left">
+                <i class="fas fa-chevron-left" data-btn="left"></i>
+            </div>
+            <div id="js-ruleRightBtn" class="rule-rightBtn" data-btn="right">
+                <i class="fas fa-chevron-right" data-btn="right"></i>
+            </div>
         </div>
     </div>
     <a href="./index.html" class="back-index" id="js-ruleDiscription">
@@ -19,5 +29,6 @@
             숫자야구하러 가기
         </button>
     </a >
+    <script src="./js/rule.js"></script>
 </body>
 </html>
