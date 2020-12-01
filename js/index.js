@@ -106,8 +106,7 @@ playingGame = () => {
   $countDown.innerText = `남은 횟수: ${limitCount - countNum}`;
   if (seletedNum === inputNum) {
     winGame();
-  }
-  if (countNum === limitCount) {
+  } else if (countNum === limitCount) {
     loseGame();
   }
 };
