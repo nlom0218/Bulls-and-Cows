@@ -120,8 +120,8 @@ teamOverlapError = () => {
     if (arr.indexOf(cur) === i) acc.push(cur);
     return acc;
   }, []);
-  if (inputNumArr.length !== 4) {
-    alert("네자리 숫자를 입력해주세요");
+  if (inputNumArr.includes("0") || inputNumArr.length !== 4) {
+    alert("0은 입력할 수 없습니다");
   } else if (overlapRemoveArr.length === 4) {
     teamPlayingGame();
     clearInterval(countTime);
