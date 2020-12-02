@@ -7,53 +7,105 @@
     <title>숫자야구</title>
 </head>
 <body>
-    <header>
-        <h1>
-            ⚾ 숫자야구 🏏
-        </h1>
-    </header>
-    <button id="js-startBtn" class="start-btn">
-        시작하기
-    </button>
-    <div id="js-difficultySetting" class="difficultySetting">
-        <div id="js-difficulty" class="difficultySetting_difficulty">
-            난이도 조절
-        </div>
-        <input type="range" min="5" max="30" id="js-controlRange" step="5" value="10">
-        <div id="js-curDifficulty">
-            현재 제한횟수는 10회 입니다
-        </div>
-    </div>
-    <div id="js-answerLoaf" class="answer-loaf hiding">
-        <div id="js-inputExplan" class="input-explan">4자리의 숫자를 입력하세요</div>
-        <form id="js-formAnswer">
-            <input autocomplete="off" type="text" id="js-inputAnswer" class="input-answer" maxlength="4" minlength="4">
-        </form>
-    </div>
-    <div id="js-resultLoaf" class="result-loaf hiding">
-        <div class="pastColumn">
-            <div class="pastColumn_title">상황판</div>
-            <div id="js-pastResult" class="past-result"></div>
-        </div>
-    </div>
-    <div id="js-countDown" class="countdown hiding"></div>
-    <div id="js-finishGame" class="finish-game hiding">
-        <div id="js-finishText" class="finish-text"></div>
-        <div class="finish-btn">
-            <button id="js-resetBtn" class="resetBtn">
-                다시하기
-            </button>
-            <button id="js-backBtn" class="backBtn">
-                처음 화면으로
-            </button>
-        </div>
-        <div id="js-resultTable" class="result-table"></div>
-    </div>
-    <a href="./rule.html" class="ruleDiscription" id="js-ruleDiscription">
-        <button>
-            숫자야구 규칙 알아보러 가기
+    <div class="normalMode">
+        <header>
+            <h1>
+                ⚾ 숫자야구 🏏
+            </h1>
+        </header>
+        <button id="js-startBtn" class="start-btn">
+            시작하기
         </button>
-    </a >
+        <div id="js-difficultySetting" class="difficultySetting">
+            <div id="js-difficulty" class="difficultySetting_difficulty">
+                난이도 조절
+            </div>
+            <input type="range" min="5" max="30" id="js-controlRange" step="5" value="10">
+            <div id="js-curDifficulty">
+                현재 제한횟수는 10회 입니다
+            </div>
+        </div>
+        <div id="js-answerLoaf" class="answer-loaf hiding">
+            <div id="js-inputExplan" class="input-explan">4자리의 숫자를 입력하세요</div>
+            <form id="js-formAnswer">
+                <input autocomplete="off" type="text" id="js-inputAnswer" class="input-answer" maxlength="4" minlength="4">
+            </form>
+        </div>
+        <div id="js-resultLoaf" class="result-loaf hiding">
+            <div class="pastColumn">
+                <div class="pastColumn_title">상황판</div>
+                <div id="js-pastResult" class="past-result"></div>
+            </div>
+        </div>
+        <div id="js-countDown" class="countdown hiding"></div>
+        <div id="js-finishGame" class="finish-game hiding">
+            <div id="js-finishText" class="finish-text"></div>
+            <div class="finish-btn">
+                <button id="js-resetBtn" class="resetBtn">
+                    다시하기
+                </button>
+                <button id="js-backBtn" class="backBtn">
+                    처음 화면으로
+                </button>
+            </div>
+            <div id="js-resultTable" class="result-table"></div>
+        </div>
+        <button id="js-teamGameBtn" class="teamGame-btn">
+            팀전모드로 시작하기
+        </button>
+        <a href="./rule.html" class="ruleDiscription" id="js-ruleDiscription">
+            <button>
+                숫자야구 규칙 알아보러 가기
+            </button>
+        </a >
+    </div>
+    <!-- team game mode -->
+    <div class="teamGameMode">
+        <div id="js-teamNumber" class="team-number hiding">
+            <div class="team-number_comment">몇 팀이 게임에 참가하나요?</div>
+            <form id="js-formTeamNum" class="form-teamNum">
+                <input autocomplete="off" type="text" id="js-inputTeamNum" class="input-teamNum" placeholder="팀수입력">
+                <input type="submit" value="팀이름 정하기">
+            </form>
+        </div>
+        <div id="js-teamName" class="team-name hiding"></div>
+        <div id="js-teamIntroduce" class="team-introduce hiding"></div>
+        <div id="js-timeSetting" class="time-setting hiding">
+            <div class="time-setting_comment">각 팀에게 주어지는 제한시간을 정하세요(초)</div>
+            <form id="js-formTimeSetting" class="form-timeSetting">
+                <input autocomplete="off" type="text" id="js-inputTimeSetting" class="input-timeSetting" placeholder="(초)">
+                <input type="submit" value="시작하기">
+            </form>
+        </div>
+        <div id="js-teamAnswerLoaf" class="team-answer-loaf hiding">
+            <div id="js-limitTime" class="team-limit-time"></div>
+            <div id="js-teamOrder" class="team-order"></div>
+            <div id="js-teamInputExplan" class="team-input-explan">4자리의 숫자를 입력하세요</div>
+            <form id="js-teamFormAnswer">
+                <input autocomplete="off" type="text" id="js-teamInputAnswer" class="team-input-answer" maxlength="4" minlength="4">
+            </form>
+        </div>
+        <div id="js-teamResultLoaf" class="team-result-loaf hiding">
+            <div class="team-pastColumn">
+                <div class="team-pastColumn_title">상황판</div>
+                <div id="js-teamPastResult" class="team-past-result"></div>
+            </div>
+        </div>
+        <div id="js-teamFinishGame" class="team-finish-game hiding">
+            <div id="js-teamWinner" class="team-team-winner"></div>
+            <div id="js-teamFinishText" class="team-finish-text"></div>
+            <div class="finish-btn">
+                <button id="js-teamResetBtn" class="team-resetBtn">
+                    다시하기
+                </button>
+                <button id="js-teamBackBtn" class="team-backBtn">
+                    처음 화면으로
+                </button>
+            </div>
+            <div id="js-teamResultTable" class="team-result-table"></div>
+        </div>
+    </div>
     <script src="./js/index.js"></script>
+    <script src="./js/team.js"></script>
 </body>
 </html>

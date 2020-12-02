@@ -8,7 +8,7 @@ header h1 {
 .start-btn {
   font-size: 28px;
   font-weight: 600;
-  margin-top: 100px;
+  margin-top: 60px;
   padding: 15px 50px;
   border: none;
   outline: none;
@@ -20,13 +20,13 @@ header h1 {
 
 .ruleDiscription button {
   font-size: 20px;
-  font-weight: 400;
+  font-weight: 600;
   padding: 10px 30px;
   border: none;
   outline: none;
   cursor: pointer;
-  background-color: #8d5524;
-  color: #ffdbac;
+  background-color: #2e003e;
+  color: #e4dcf1;
   border-radius: 10px;
 }
 
@@ -58,10 +58,6 @@ header h1 {
 }
 
 .result-loaf {
-  display: flex;
-  align-items: flex-start;
-  justify-content: space-around;
-  width: 600px;
   margin-top: 30px;
   margin-bottom: 30px;
 }
@@ -73,7 +69,6 @@ header h1 {
   align-items: center;
 }
 
-.curColumn_title,
 .pastColumn_title {
   font-size: 24px;
   font-weight: 700;

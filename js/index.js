@@ -41,6 +41,7 @@ handleClickStartBtn = () => {
   $startBtn.classList.add("hiding");
   $difficultySetting.classList.add("hiding");
   $ruleDiscription.classList.add("hiding");
+  $teamGameBtn.classList.add("hiding");
   $answerLoaf.classList.remove("hiding");
   $inputAnswer.focus();
   makingNum();
@@ -118,7 +119,7 @@ overlapError = () => {
     return acc;
   }, []);
   if (inputNumArr.length !== 4) {
-    alert("숫자를 입력해주세요");
+    alert("네자리 숫자를 입력해주세요");
   } else if (overlapRemoveArr.length === 4) {
     countNum += 1;
     playingGame();
@@ -152,6 +153,7 @@ handleClickBackBtn = () => {
   $startBtn.classList.remove("hiding");
   $difficultySetting.classList.remove("hiding");
   $ruleDiscription.classList.remove("hiding");
+  $teamGameBtn.classList.remove("hiding");
 };
 
 handleMouseupControlRange = () => {

@@ -1,0 +1,211 @@
+.teamGame-btn {
+  font-size: 20px;
+  font-weight: 600;
+  padding: 10px 30px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  background-color: #2e003e;
+  color: #e4dcf1;
+  border-radius: 10px;
+  margin-bottom: 30px;
+}
+
+.team-number,
+.team-name,
+.team-introduce,
+.time-setting {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.team-number_comment,
+.time-setting_comment,
+.team-name div,
+.confirm-team-name {
+  margin: 20px 0px;
+  color: #3d2352;
+  font-size: 35px;
+  font-weight: 700;
+}
+
+.form-teamNum,
+.team-name form,
+.time-setting .form-timeSetting {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.input-teamNum,
+.input-timeSetting {
+  width: 100px;
+  padding: 10px 20px;
+  margin-top: 30px;
+  text-align: center;
+  font-size: 24px;
+  font-weight: 600;
+  border: none;
+  outline: none;
+  background-color: #3d2352;
+  color: #e4dcf1;
+  border-radius: 10px;
+}
+
+.form-teamNum input:last-child,
+.team-name form input:last-child,
+.team-introduce button,
+.time-setting form input:last-child {
+  margin-top: 20px;
+  font-size: 20px;
+  font-weight: 600;
+  padding: 10px 30px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  background-color: #3d2352;
+  color: #e4dcf1;
+  border-radius: 10px;
+}
+
+.team-name form input:not(:last-child) {
+  margin-bottom: 15px;
+  width: 250px;
+  padding: 10px 20px;
+  margin-top: 30px;
+  text-align: center;
+  font-size: 24px;
+  font-weight: 600;
+  border: none;
+  outline: none;
+  background-color: #3d2352;
+  color: #e4dcf1;
+  border-radius: 10px;
+}
+
+.each-team-name {
+  margin-bottom: 20px;
+  color: #3d1e6d;
+  font-size: 25px;
+  font-weight: 700;
+}
+
+.team-answer-loaf {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.team-answer-loaf .team-limit-time {
+  margin-top: 30px;
+  font-size: 32px;
+  font-weight: 900;
+  color: red;
+  margin-bottom: 20px;
+}
+
+.team-answer-loaf div:not(:first-child) {
+  font-size: 28px;
+  font-weight: 600;
+  color: #3d1e6d;
+  margin-bottom: 20px;
+}
+
+.team-answer-loaf .team-input-answer {
+  width: 100px;
+  padding: 10px 20px;
+  margin-top: 30px;
+  text-align: center;
+  font-size: 24px;
+  font-weight: 600;
+  border: none;
+  outline: none;
+  background-color: #3d2352;
+  color: #e4dcf1;
+  border-radius: 10px;
+}
+
+.team-result-loaf {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.team-result-loaf .team-curColumn,
+.team-result-loaf .team-pastColumn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.team-pastColumn_title {
+  font-size: 24px;
+  font-weight: 700;
+  color: #3d2352;
+  margin-bottom: 10px;
+}
+
+.team-past-result {
+  font-size: 22px;
+  font-weight: 700;
+  color: #3d1e6d;
+}
+
+/* 결과 */
+.team-finish-game {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.team-team-winner {
+  margin-top: 40px;
+  margin-bottom: 20px;
+  font-size: 40px;
+  font-weight: 900;
+  color: #3d2352;
+}
+
+.team-finish-text {
+  font-size: 40px;
+  font-weight: 900;
+  color: #3d2352;
+}
+
+.team-finish-btn {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.team-resetBtn,
+.team-backBtn {
+  font-size: 24px;
+  font-weight: 600;
+  padding: 10px 30px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  background-color: #3d2352;
+  color: #e4dcf1;
+  border-radius: 10px;
+}
+
+.team-backBtn {
+  margin-top: 20px;
+}
+
+.team-result-table {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.team-result-table div {
+  margin-bottom: 10px;
+  font-size: 22px;
+  font-weight: 700;
+  color: #3d1e6d;
+}
